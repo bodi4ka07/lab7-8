@@ -1,0 +1,59 @@
+/* ===== GLOBAL RESET & VARIABLES ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  /* Єдина світла тепла гама */
+  --bg:           #faf9f6;
+  --surface:      #ffffff;
+  --surface2:     #f3f1ec;
+  --border:       #e4e0da;
+  --border-hover: #ccc8c0;
+
+  --text:         #1a1916;
+  --text-muted:   #7a7670;
+  --text-hint:    #b0aca4;
+
+  --accent:       #c0622a;
+  --accent-hover: #a8521e;
+  --accent-light: #f7ede5;
+  --accent2:      #e8a87c;
+
+  --danger:       #c0392b;
+  --danger-bg:    #fdf2f1;
+  --danger-border:#f5c0bb;
+
+  --success:      #2e7d52;
+  --success-bg:   #f0f9f4;
+  --success-border:#a8d5be;
+
+  --shadow-sm:    0 1px 4px rgba(60,40,10,0.07);
+  --shadow:       0 4px 16px rgba(60,40,10,0.09);
+  --shadow-hover: 0 8px 28px rgba(60,40,10,0.13);
+
+  --radius:       12px;
+  --radius-sm:    8px;
+  --radius-xs:    6px;
+  --nav-height:   56px;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--text);
+}
+
+#root { min-height: 100vh; }
+
+button { cursor: pointer; font-family: var(--font-body); }
+input, textarea, select { font-family: var(--font-body); }
+img { display: block; max-width: 100%; }

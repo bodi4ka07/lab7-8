@@ -1,0 +1,91 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main { flex: 1; }
+
+/* ===== NAVIGATION ===== */
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: var(--nav-height);
+  gap: 8px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: var(--shadow-sm);
+}
+
+.navLogo {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent);
+  margin-right: 24px;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
+
+.navSection {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-hint);
+  padding: 0 8px;
+  white-space: nowrap;
+}
+
+.navSep {
+  width: 1px;
+  height: 20px;
+  background: var(--border);
+  margin: 0 8px;
+  flex-shrink: 0;
+}
+
+.navTab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.navTab:hover {
+  color: var(--text);
+  background: var(--surface2);
+}
+
+.navTab.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.badge {
+  background: var(--accent);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 10px;
+  line-height: 1.4;
+}

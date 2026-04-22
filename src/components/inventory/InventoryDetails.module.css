@@ -1,0 +1,105 @@
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  max-width: 540px;
+  box-shadow: var(--shadow-sm);
+}
+
+.imgWrap {
+  width: 100%;
+  height: 260px;
+  position: relative;
+  background: var(--surface2);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.imgFallback {
+  position: absolute;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 64px;
+}
+
+.fields { padding: 24px; }
+
+.field { margin-bottom: 18px; }
+.field:last-child { margin-bottom: 0; }
+
+.fieldLabel {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--text-hint);
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.fieldValue {
+  font-size: 16px;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.fieldDesc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.code {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 13px;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: 1px solid var(--border);
+  gap: 10px;
+  background: var(--surface2);
+}
+
+.btnBack {
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.btnBack:hover {
+  background: var(--border);
+  color: var(--text);
+}
+
+.btnEdit {
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.btnEdit:hover { background: var(--accent-hover); }
