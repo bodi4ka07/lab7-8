@@ -1,0 +1,62 @@
+/*стилі для горизонтальної панелі з улюбленими позиціями, 
+включаючи стилі для чіпів з назвами позицій і кнопки для перегляду всіх улюблених*/
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--accent-light);
+  border: 1px solid rgba(192, 98, 42, 0.2);
+  border-radius: var(--radius-sm);
+  padding: 10px 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.chip {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: var(--surface);
+  border: 1px solid rgba(192, 98, 42, 0.2);
+  border-radius: 20px;
+  color: var(--text);
+  white-space: nowrap;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.more {
+  font-size: 12px;
+  padding: 3px 10px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.viewAll {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--accent);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.viewAll:hover { opacity: 0.7; }
